@@ -12,7 +12,7 @@
     <meta name="theme-color" content="#fafafa">
   </head>
   <body id="body">
-    <h1 class="display-5 text-center mx-2 my-5 pt-5">RGB/HEX Color Value Converter</h1>
+    <h1 class="display-5 text-center mx-2 my-3 pt-5">RGB/HEX Color Value Converter</h1>
     <div class="container-fluid h-100">
         <div class="row h-50" id="choose-conversion">
             <div class="form-group col-md-4 mx-auto text-center align-self-center">
@@ -28,12 +28,12 @@
 
         <!--Convert RGB to HEX-->
         <div class="row h-50" id="rgb-to-hex-input" >
-            <div class="form-group col-md-4 text-center mx-auto align-self-center">
+            <div class="form-group col-md-4 text-center mx-auto py-3 align-self-center input-area">
                 <h4 class="text-center"><label for="rgb-value">Enter RGB Value</label></h4>
-                <div class="row my-4 mx-auto">
-                    <input type="number" id="red-input" class="form-control col-md my-2 mx-auto rgb-input-field" placeholder="Red Value" value="">
-                    <input type="number" id="green-input" class="form-control col-md my-2 mx-auto rgb-input-field" placeholder="Green Value" value=""> 
-                    <input type="number" id="blue-input" class="form-control col-md my-2 mx-auto rgb-input-field" placeholder="Blue Value" value="">
+                <div class=" my-4 mx-auto">
+                    <input type="number" id="red-input" class="form-control my-3 mx-auto rgb-input-field text-center" placeholder="Red Value" value="">
+                    <input type="number" id="green-input" class="form-control my-3 mx-auto rgb-input-field text-center" placeholder="Green Value" value=""> 
+                    <input type="number" id="blue-input" class="form-control my-3 mx-auto rgb-input-field text-center" placeholder="Blue Value" value="">
                 </div>
                 <button type="button" id="convert-hex-btn" class="btn btn-primary mx-auto">Convert</button>
                 <h4 class="text-center my-4">Hex Value</h4>
@@ -44,7 +44,7 @@
 
         <!--Convert from HEX to RGB-->
         <div class="row h-50" id="hex-to-rgb-input">
-            <div class="form-group col-md-4 text-center mx-auto align-self-center">
+            <div class="form-group col-md-4 text-center mx-auto py-3 align-self-center input-area">
                 <h4 class="text-center"><label for="hex-value">Enter HEX Value</label></h4>
                 <input type="input" id="hex-input" class="form-control mx-auto my-4" placeholder="- - - - - -" value="">
                 <button type="button" id="convert-rgb-btn" class="btn btn-primary mx-auto">Convert</button>
@@ -57,10 +57,10 @@
 
     <!--JavaScript -->
     
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
