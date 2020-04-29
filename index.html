@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Color Value Converter</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <meta name="theme-color" content="#fafafa">
+  </head>
+  <body>
+    <h1 class="display-4 text-center">RGB/HEX Color Value Converter</h1>
+    <div class="container-fluid">
+        <div id="choose-conversion" class="form-group col-md-4 mx-auto text-center">
+            <h4 class="text-center"><label for="conversion">Select Conversion</label></h4> 
+            <select class="form-control" id="conversion">
+                <option value="selected" selected>Choose your conversion</option>
+                <option value="rgb-to-hex">RGB to HEX</option>
+                <option value="hex-to-rgb">HEX to RGB</option>
+            </select>
+            <button type="button" id="conversion-chosen" class="btn btn-primary mx-auto my-2">Select</button>
+        </div>
+
+        <!--Convert RGB to HEX-->
+        <div id="rgb-to-hex-input" class="form-group col-md-4 text-center mx-auto">
+            <h4 class="text-center"><label for="rgb-value">Enter RGB Value</label></h4>
+            <div class="row">
+                <input type="number" id="red-input" class="form-control col-md mx-2" placeholder="Red Value">
+                <input type="number" id="green-input" class="form-control col-md mx-2" placeholder="Green Value">
+                <input type="number" id="blue-input" class="form-control col-md mx-2" placeholder="Blue Value">
+            </div>
+            <h4 class="text-center">Hex Value</h4>
+            <h4 id="hex-value-result" class="text-center">Hex Value Goes here</h4>
+            <button type="button" id="reset-1" class="btn btn-primary mx-auto">Reset</button>
+        </div>
+
+        <!--Convert from HEX to RGB-->
+        <div id="hex-to-rgb-input" class="form-group col-md-4 text-center mx-auto">
+            <h4 class="text-center"><label for="hex-value">Enter HEX Value</label></h4>
+            <input type="number" id="hex-input" class="form-control" placeholder="XXXXXX">
+            
+            <h4 class="text-center">Hex Value</h4>
+            <h4 id="rgb-value-result" class="text-center">RGB Value Goes here</h4>
+            <button type="button" id="reset-2" class="btn btn-primary mx-auto">Reset</button>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    <!--JavaScript -->
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
