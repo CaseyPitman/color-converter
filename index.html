@@ -11,46 +11,48 @@
     <link rel="stylesheet" href="main.css">
     <meta name="theme-color" content="#fafafa">
   </head>
-  <body>
-    <h1 class="display-4 text-center">RGB/HEX Color Value Converter</h1>
-    <div class="container-fluid">
-        <div id="choose-conversion" class="form-group col-md-4 mx-auto text-center">
-            <h4 class="text-center"><label for="conversion">Select Conversion</label></h4> 
-            <select class="form-control" id="conversion">
-                <option value="selected" selected>Choose your conversion</option>
-                <option value="rgb-to-hex">RGB to HEX</option>
-                <option value="hex-to-rgb">HEX to RGB</option>
-            </select>
-            <button type="button" id="conversion-chosen" class="btn btn-primary mx-auto my-2">Select</button>
+  <body id="body">
+    <h1 class="display-5 text-center mx-2 my-5 pt-5">RGB/HEX Color Value Converter</h1>
+    <div class="container-fluid h-100">
+        <div class="row h-50" id="choose-conversion">
+            <div class="form-group col-md-4 mx-auto text-center align-self-center">
+                <h3 class="text-center"><label for="conversion">Select Conversion</label></h3> 
+                <select class="form-control mx-auto my-4" id="conversion-selector">
+                    <option value="selected" selected>Choose your conversion</option>
+                    <option value="rgb-to-hex">RGB to HEX</option>
+                    <option value="hex-to-rgb">HEX to RGB</option>
+                </select>
+                <button type="button" id="conversion-chosen" class="btn btn-primary mx-auto my-2">Select</button>
+            </div>
         </div>
 
         <!--Convert RGB to HEX-->
-        <div id="rgb-to-hex-input" class="form-group col-md-4 text-center mx-auto">
-            <h4 class="text-center"><label for="rgb-value">Enter RGB Value</label></h4>
-            <div class="row">
-                <input type="number" id="red-input" class="form-control col-md mx-2" placeholder="Red Value">
-                <input type="number" id="green-input" class="form-control col-md mx-2" placeholder="Green Value">
-                <input type="number" id="blue-input" class="form-control col-md mx-2" placeholder="Blue Value">
+        <div class="row h-50" id="rgb-to-hex-input" >
+            <div class="form-group col-md-4 text-center mx-auto align-self-center">
+                <h4 class="text-center"><label for="rgb-value">Enter RGB Value</label></h4>
+                <div class="row my-4 mx-auto">
+                    <input type="number" id="red-input" class="form-control col-md my-2 mx-auto rgb-input-field" placeholder="Red Value">
+                    
+                    <input type="number" id="green-input" class="form-control col-md my-2 mx-auto rgb-input-field" placeholder="Green Value">
+                    
+                    <input type="number" id="blue-input" class="form-control col-md my-2 mx-auto rgb-input-field" placeholder="Blue Value">
+                </div>
+                <h4 class="text-center">Hex Value</h4>
+                <h4 id="hex-value-result" class="text-center">&nbsp;</h4>
+                <button type="button" id="reset-1" class="btn btn-primary mx-auto">Reset</button>
             </div>
-            <h4 class="text-center">Hex Value</h4>
-            <h4 id="hex-value-result" class="text-center">Hex Value Goes here</h4>
-            <button type="button" id="reset-1" class="btn btn-primary mx-auto">Reset</button>
         </div>
 
         <!--Convert from HEX to RGB-->
-        <div id="hex-to-rgb-input" class="form-group col-md-4 text-center mx-auto">
-            <h4 class="text-center"><label for="hex-value">Enter HEX Value</label></h4>
-            <input type="number" id="hex-input" class="form-control" placeholder="XXXXXX">
-            
-            <h4 class="text-center">Hex Value</h4>
-            <h4 id="rgb-value-result" class="text-center">RGB Value Goes here</h4>
-            <button type="button" id="reset-2" class="btn btn-primary mx-auto">Reset</button>
+        <div class="row h-50" id="hex-to-rgb-input">
+            <div class="form-group col-md-4 text-center mx-auto align-self-center">
+                <h4 class="text-center"><label for="hex-value">Enter HEX Value</label></h4>
+                <input type="number" id="hex-input" class="form-control mx-auto" placeholder="XXXXXX">
+                <h4 class="text-center">Hex Value</h4>
+                <h4 id="rgb-value-result" class="text-center">RGB Value Goes here</h4>
+                <button type="button" id="reset-2" class="btn btn-primary mx-auto">Reset</button>
+            </div>
         </div>
-
-
-
-
-
 
 
     </div>

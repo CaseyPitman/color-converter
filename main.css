@@ -1,3 +1,25 @@
+#body{
+    height:100vh;
+}
+
+
+
+#choose-conversion{
+   display:none;
+}
+/*
 #rgb-to-hex-input{
     display:none;
+}*/
+
+#hex-to-rgb-input{
+   display:none;
 }
+
+.rgb-input-field,
+#hex-input,
+#conversion-selector{
+    max-width:66%;
+}
+
+
