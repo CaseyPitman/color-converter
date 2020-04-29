@@ -31,15 +31,14 @@
             <div class="form-group col-md-4 text-center mx-auto align-self-center">
                 <h4 class="text-center"><label for="rgb-value">Enter RGB Value</label></h4>
                 <div class="row my-4 mx-auto">
-                    <input type="number" id="red-input" class="form-control col-md my-2 mx-auto rgb-input-field" placeholder="Red Value">
-                    
-                    <input type="number" id="green-input" class="form-control col-md my-2 mx-auto rgb-input-field" placeholder="Green Value">
-                    
-                    <input type="number" id="blue-input" class="form-control col-md my-2 mx-auto rgb-input-field" placeholder="Blue Value">
+                    <input type="number" id="red-input" class="form-control col-md my-2 mx-auto rgb-input-field" placeholder="Red Value" value="">
+                    <input type="number" id="green-input" class="form-control col-md my-2 mx-auto rgb-input-field" placeholder="Green Value" value=""> 
+                    <input type="number" id="blue-input" class="form-control col-md my-2 mx-auto rgb-input-field" placeholder="Blue Value" value="">
                 </div>
-                <h4 class="text-center">Hex Value</h4>
-                <h4 id="hex-value-result" class="text-center">&nbsp;</h4>
-                <button type="button" id="reset-1" class="btn btn-primary mx-auto">Reset</button>
+                <button type="button" id="convert-hex-btn" class="btn btn-primary mx-auto">Convert</button>
+                <h4 class="text-center my-4">Hex Value</h4>
+                <h4 id="hex-value-result" class="text-center my-3">&nbsp;</h4>
+                <button type="button" id="reset-1" class="btn btn-primary mt-5 mx-auto">Reset</button>
             </div>
         </div>
 
@@ -47,14 +46,13 @@
         <div class="row h-50" id="hex-to-rgb-input">
             <div class="form-group col-md-4 text-center mx-auto align-self-center">
                 <h4 class="text-center"><label for="hex-value">Enter HEX Value</label></h4>
-                <input type="number" id="hex-input" class="form-control mx-auto" placeholder="XXXXXX">
-                <h4 class="text-center">Hex Value</h4>
-                <h4 id="rgb-value-result" class="text-center">RGB Value Goes here</h4>
-                <button type="button" id="reset-2" class="btn btn-primary mx-auto">Reset</button>
+                <input type="input" id="hex-input" class="form-control mx-auto my-4" placeholder="- - - - - -" value="">
+                <button type="button" id="convert-rgb-btn" class="btn btn-primary mx-auto">Convert</button>
+                <h4 class="text-center my-4">RGB Value</h4>
+                <h4 id="rgb-value-result" class="text-center my-3">&nbsp;</h4>
+                <button type="button" id="reset-2" class="btn btn-primary mt-5 mx-auto">Reset</button>
             </div>
         </div>
-
-
     </div>
 
     <!--JavaScript -->
