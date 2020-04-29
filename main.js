@@ -18,9 +18,9 @@ $("#conversion-chosen").click(function(){
 //User inputs rgb value to convert to hex
 $("#convert-hex-btn").click(function(){
     //Stores user inputs
-    let redValue = $("#red-input").val();
-    let greenValue = $("#green-input").val();
-    let blueValue = $("#blue-input").val();
+    let redValue = parseInt($("#red-input").val());
+    let greenValue = parseInt($("#green-input").val());
+    let blueValue = parseInt($("#blue-input").val());
 
     //Ensure valid inputs
     if(redValue<0 || redValue > 255 || 
@@ -32,13 +32,12 @@ $("#convert-hex-btn").click(function(){
     //Run the conversion
     let hexValue = rgb(redValue, greenValue, blueValue);
 
+    //Change the background color to match the input color ;)
     $(body).css("background-color", hexValue);
 
+    //Display the converted RGB value as HEX
+    $("#hex-value-result").text(hexValue);
 }); //End RGB -> Hex
-
-
-
-});//end jQuery
 
 //Function to convert RGB to Hex
 function rgb(r, g, b){
@@ -52,11 +51,8 @@ function rgb(r, g, b){
         hexArray.push(value.toString(16).toUpperCase());
       }
     } 
-    return "#"+hexArray[0].concat(hexArray[1],hexArray[2]);
+    return "#" + hexArray[0].concat(hexArray[1],hexArray[2]);
   }
 
-/*
-  $("#conversion-chosen").click(function(){
-    $(body).css("background-color", "//color goes here");
-});
-*/
+
+});//end jQuery
