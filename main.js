@@ -7,7 +7,12 @@ $("#conversion-chosen").click(function(){
     //Hides chooser
     $("#choose-conversion").hide();
     //Shows chosen conversion inputs
-    if (choice=="rgb-to-hex"){
+    if (choice==="selected"){
+        alert("You must choose a conversion.");
+        location.reload();
+    }
+
+    else if (choice=="rgb-to-hex"){
         $("#rgb-to-hex-input").show();
     }
     else if(choice=="hex-to-rgb"){
