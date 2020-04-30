@@ -13,6 +13,8 @@ $("#conversion-chosen").click(function(){
     else if(choice=="hex-to-rgb"){
         $("#hex-to-rgb-input").show();
     }
+    //Shows reset button
+    $("#reload").show();
 });
 
 //User inputs rgb value to convert to hex
@@ -53,6 +55,29 @@ function rgb(r, g, b){
     } 
     return "#" + hexArray[0].concat(hexArray[1],hexArray[2]);
   }
+
+// User chooses to convert Hex to rgb
+$("#convert-rgb-btn").click(function(){
+    //Stores user input
+    let hexValue = $("#hex-input").val();
+    //Check for valid hex value
+    let hexRegEx = /^#([0-9a-fA-f]{6})$/g;
+    if (hexRegEx.test(hexValue)===false){
+        alert ("Invalid Hex Value. Hex value must contain # followed by a combination of six characters comprising digits 0-9 and letters A-F.");
+    }
+    
+   
+
+});
+
+
+
+
+//Resets the page
+$("#reload-btn").click(function(){
+    location.reload();
+});
+
 
 
 });//end jQuery
