@@ -15,7 +15,7 @@
     <h1 class="display-5 text-center mx-2 my-3 pt-5">RGB/HEX Color Value Converter</h1>
     <div class="container-fluid h-100">
         <div class="row h-50" id="choose-conversion">
-            <div class="form-group col-md-4 mx-auto text-center align-self-center">
+            <div class="form-group col-md-6 mx-auto text-center align-self-center">
                 <h3 class="text-center"><label for="conversion">Select Conversion</label></h3> 
                 <select class="form-control mx-auto my-4" id="conversion-selector">
                     <option value="selected" selected>Choose your conversion</option>
@@ -28,7 +28,7 @@
 
         <!--Convert RGB to HEX-->
         <div class="row h-50" id="rgb-to-hex-input" >
-            <div class="form-group col-md-4 text-center mx-auto py-3 align-self-center input-area">
+            <div class="form-group col-md-6 text-center mx-auto py-3 align-self-center input-area">
                 <h4 class="text-center"><label for="rgb-value">Enter RGB Value</label></h4>
                 <div class=" my-4 mx-auto">
                     <input type="number" id="red-input" class="form-control my-3 mx-auto rgb-input-field text-center" placeholder="Red Value" value="">
@@ -44,9 +44,9 @@
 
         <!--Convert from HEX to RGB-->
         <div class="row h-50" id="hex-to-rgb-input">
-            <div class="form-group col-md-4 text-center mx-auto py-3 align-self-center input-area">
+            <div class="form-group col-md-6 text-center mx-auto py-3 align-self-center input-area">
                 <h4 class="text-center"><label for="hex-value">Enter HEX Value</label></h4>
-                <input type="input" id="hex-input" class="form-control mx-auto my-4"  value="#">
+                <input type="input" id="hex-input" class="form-control mx-auto my-4" value="#">
                 <button type="button" id="convert-rgb-btn" class="btn btn-primary mx-auto">Convert</button>
                 <h4 class="text-center my-4">RGB Value</h4>
                 <h4 id="rgb-value-result" class="text-center my-3">&nbsp;</h4>

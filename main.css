@@ -1,12 +1,7 @@
 #body{
     height:100vh;
+    background-color:white;
 }
-
-/*
-#choose-conversion{
-   display:none;
-}
-*/
 
 #rgb-to-hex-input{
     display:none;
