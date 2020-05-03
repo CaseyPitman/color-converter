@@ -35,13 +35,6 @@ $("#convert-hex-btn").click(function(){
         $(body).css("background-color", "white");
     }   
 
-/*
-    //Convert inputs to numbers for conversion
-    redValue = parseInt(redValue);
-    greenValue = parseInt(greenValue);
-    blueValue = parseInt(blueValue);
-*/
-
     //Ensure valid inputs
     else if(parseInt(redValue)<0 || parseInt(redValue)> 255 || 
             parseInt(greenValue)<0 || parseInt(greenValue) > 255 ||
