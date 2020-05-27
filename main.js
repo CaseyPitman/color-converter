@@ -1,4 +1,4 @@
-$(document).ready(function(){  //jQuery
+
  
 //User selects which type of conversion they want to do. 
 $("#conversion-chosen").click(function(){
@@ -120,4 +120,4 @@ function hexToRGB (hex){
 $("#reload-btn").click(function(){
     location.reload();
 });
-});//end jQuery
+
